@@ -1,13 +1,13 @@
-let mapleader=" "			" set leader to <space>.
-set scrolloff=20			" set scroll depth.
-set ignorecase				" ignore case during search.
-set incsearch				" highlight matches during search.
-nnoremap <c-l> :set hlsearch!<cr>	" toggle search highlight.
-set relativenumber			" relative line numbers.
-set visualbell				" disable bells.
-set clipboard+=unnamed			" use system clipboard
-set ideajoin				" use IDE join.
+let mapleader=" "
 
+set scrolloff=20
+set ignorecase
+set incsearch
+set relativenumber
+set visualbell
+set clipboard+=unnamed
+
+map <c-l> :set hlsearch!<cr>
 
 "
 " mappings
