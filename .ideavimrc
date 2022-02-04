@@ -2,6 +2,7 @@ let mapleader=" "
 
 set scrolloff=20
 set ignorecase
+
 set incsearch
 set relativenumber
 set visualbell
@@ -14,30 +15,53 @@ map <c-l> :set hlsearch!<cr>
 " mappings
 "
 
+map <c-c> <Action>(EditorScrollToCenter)
+
 " cycle forward/back between known locations.
 map <c-O> <Action>(Forward)
 map <c-I> <Action>(Back)
 
-" show refactor quick-list.
+" insert line top & bottom.
+map <leader>o O<cr><esc>
+
+" fast scroll.
+noremap <s-k> 2<c-y>
+noremap <s-j> 2<c-e>
+
+"
+" idea.
+"
+
+" reload config.
+map <leader>cr :source ~/.ideavimrc<cr>
+
+map <leader>wh <Action>(HideAllWindows)
+map <a-up> <Action>(EditorSelectWord)
+map <a-down> <Action>(EditorUnSelectWord)
+map <a-s-up> <Action>(MoveStatementUp)
+map <a-s-down> <Action>(MoveStatementDown)
+map [m <Action>(MethodUp)
+map ]m <Action>(MethodDown)
+map / <Action>(Find)
+
+" intellisense.
 map <leader>rf <Action>(Refactorings.QuickListPopupAction)
-
-" show (lightbulb) code actions.
 map <leader>ca <Action>(ShowIntentionActions)
-
-" show doc.
 map <leader>dc <Action>(QuickJavaDoc)
-
-" preview implementation.
+map <leader>gd <Action>(GotoDeclaration)
 map <leader>pi <Action>(QuickImplementations)
-
-" preview type defintion.
 map <leader>pt <Action>(ExpressionTypeInfo)
-
-" preview parameters.
 map <leader>pp <Action>(ParameterInfo)
 
-" close tool windows.
-map <leader>tc <Action>(HideAllWindows)
+" diagnostics.
+
+map <leader>]d <Action>(GotoNextError)
+map <leader>[d <Action>(GotoPreviousError)
+map <leader>di <Action>(ActivateProblemsViewToolWindow)
+
+" built-ins.
+map <leader>lo <Action>(RecentLocations)
+map <leader>sw <Action>(Switcher)
 
 " tab navigation.
 map <leader>01 <Action>(GoToTab1)
@@ -49,6 +73,4 @@ map <leader>06 <Action>(GoToTab6)
 map <leader>07 <Action>(GoToTab7)
 map <leader>08 <Action>(GoToTab8)
 map <leader>09 <Action>(GoToTab9)
-
-map d <Action>(Documentation.ViewExternal)
 
