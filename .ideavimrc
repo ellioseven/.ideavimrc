@@ -63,14 +63,3 @@ map <leader>di <Action>(ActivateProblemsViewToolWindow)
 map <leader>lo <Action>(RecentLocations)
 map <leader>sw <Action>(Switcher)
 
-" tab navigation.
-map <leader>01 <Action>(GoToTab1)
-map <leader>02 <Action>(GoToTab2)
-map <leader>03 <Action>(GoToTab3)
-map <leader>04 <Action>(GoToTab4)
-map <leader>05 <Action>(GoToTab5)
-map <leader>06 <Action>(GoToTab6)
-map <leader>07 <Action>(GoToTab7)
-map <leader>08 <Action>(GoToTab8)
-map <leader>09 <Action>(GoToTab9)
-
