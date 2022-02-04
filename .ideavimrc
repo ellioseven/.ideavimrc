@@ -7,9 +7,48 @@ set relativenumber
 set visualbell
 set clipboard+=unnamed
 
+" toggle search highlight.
 map <c-l> :set hlsearch!<cr>
 
 "
 " mappings
 "
+
+" cycle forward/back between known locations.
+map <c-O> <Action>(Forward)
+map <c-I> <Action>(Back)
+
+" show refactor quick-list.
+map <leader>rf <Action>(Refactorings.QuickListPopupAction)
+
+" show (lightbulb) code actions.
+map <leader>ca <Action>(ShowIntentionActions)
+
+" show doc.
+map <leader>dc <Action>(QuickJavaDoc)
+
+" preview implementation.
+map <leader>pi <Action>(QuickImplementations)
+
+" preview type defintion.
+map <leader>pt <Action>(ExpressionTypeInfo)
+
+" preview parameters.
+map <leader>pp <Action>(ParameterInfo)
+
+" close tool windows.
+map <leader>tc <Action>(HideAllWindows)
+
+" tab navigation.
+map <leader>01 <Action>(GoToTab1)
+map <leader>02 <Action>(GoToTab2)
+map <leader>03 <Action>(GoToTab3)
+map <leader>04 <Action>(GoToTab4)
+map <leader>05 <Action>(GoToTab5)
+map <leader>06 <Action>(GoToTab6)
+map <leader>07 <Action>(GoToTab7)
+map <leader>08 <Action>(GoToTab8)
+map <leader>09 <Action>(GoToTab9)
+
+map d <Action>(Documentation.ViewExternal)
 
