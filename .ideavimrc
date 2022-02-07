@@ -35,14 +35,26 @@ noremap <s-j> 2<c-e>
 " reload config.
 map <leader>cr :source ~/.ideavimrc<cr>
 
+" built-ins.
+map / <Action>(Find)
+map <leader>te <Action>(ActivateTerminalToolWindow)
+map <leader>lo <Action>(RecentLocations)
+map <leader>sw <Action>(Switcher)
+
+" windows.
 map <leader>wh <Action>(HideAllWindows)
+
+" selection.
 map <a-up> <Action>(EditorSelectWord)
 map <a-down> <Action>(EditorUnSelectWord)
+
+" editing.
 map <a-s-up> <Action>(MoveStatementUp)
 map <a-s-down> <Action>(MoveStatementDown)
+
+" movement.
 map [m <Action>(MethodUp)
 map ]m <Action>(MethodDown)
-map / <Action>(Find)
 
 " intellisense.
 map <leader>rf <Action>(Refactorings.QuickListPopupAction)
@@ -65,8 +77,7 @@ map gbr <Action>(Git.Branches)
 map gpl <Action>(Git.Pull)
 map gcp <Action>(Git.CompareWithBranch)
 map gre <Action>(Compare.Selected)
-
-" built-ins.
-map <leader>lo <Action>(RecentLocations)
-map <leader>sw <Action>(Switcher)
+map gpr <Action>(Github.View.Pull.Request)
+map ghs <Action>(Vcs.ShowHistoryForBlock)
+map ghf <Action>(Vcs.ShowTabbedFileHistory)
 
