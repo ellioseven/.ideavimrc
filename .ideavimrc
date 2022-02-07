@@ -83,3 +83,9 @@ map <leader>ghs <Action>(Vcs.ShowHistoryForBlock)
 map <leader>ghf <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>gmn <Action>(Git.Menu)
 
+" practice mode.
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
