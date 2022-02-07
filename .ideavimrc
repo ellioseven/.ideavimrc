@@ -37,6 +37,7 @@ map <leader>cr :source ~/.ideavimrc<cr>
 
 " built-ins.
 map / <Action>(Find)
+map <leader>rn <Action>(RunAnything)
 map <leader>te <Action>(ActivateTerminalToolWindow)
 map <leader>lo <Action>(RecentLocations)
 map <leader>sw <Action>(Switcher)
