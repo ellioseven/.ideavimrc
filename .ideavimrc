@@ -50,8 +50,8 @@ map <a-up> <Action>(EditorSelectWord)
 map <a-down> <Action>(EditorUnSelectWord)
 
 " editing.
-map <a-s-up> <Action>(MoveStatementUp)
-map <a-s-down> <Action>(MoveStatementDown)
+map <a-s-up> <Action>(MoveLineUp)
+map <a-s-down> <Action>(MoveLineDown)
 
 " movement.
 map [m <Action>(MethodUp)
