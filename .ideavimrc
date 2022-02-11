@@ -56,6 +56,8 @@ map <a-s-down> <Action>(MoveLineDown)
 " movement.
 map [m <Action>(MethodUp)
 map ]m <Action>(MethodDown)
+map [c <Action>(VcsShowPrevChangeMarker)
+map ]c <Action>(VcsShowNextChangeMarker)
 
 " intellisense.
 map <leader>rf <Action>(Refactorings.QuickListPopupAction)
